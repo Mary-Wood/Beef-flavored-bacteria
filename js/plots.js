@@ -20,7 +20,7 @@ function init() {
   }
 
   function buildMetadata(sample) { //the id # is passed in as the variable sample
-    d3.json("../samples.json").then((data) => { //this is the whole data set read in. "data"
+    d3.json("../Beef-flavored-bacteria/samples.json").then((data) => { //this is the whole data set read in. "data"
       var metadata = data.metadata; //This grabs just the section we need -- metadata
       var resultArray = metadata.filter(sampleObj => sampleObj.id == sample); //This filters on the specific ID provided
       var result = resultArray[0]; //This grabs the array
